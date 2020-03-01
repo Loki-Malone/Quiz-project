@@ -5,7 +5,7 @@
 
 # Technology
 
-HTML, CSS, Bootstrap, Java Script
+HTML, CSS, Java Script
 
 # Contact
 
