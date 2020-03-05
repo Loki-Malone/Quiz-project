@@ -7,3 +7,38 @@ let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
 let avaiableQuestions =[];
+
+let questions = [
+    {
+        question:'how many sides are to a square',
+        choice1: '3',
+        choice2: '4',
+        choice3: '6',
+        choice4: '2',
+        answer: 1
+    },
+    {
+        question:'how many sides are to a square',
+        choice1: '3',
+        choice2: '4',
+        choice3: '6',
+        choice4: '2',
+        answer: 2
+    },
+    {
+        question:'how many sides are to a square',
+        choice1: '3',
+        choice2: '4',
+        choice3: '6',
+        choice4: '2',
+        answer: 3
+    },
+    {
+        question:'how many sides are to a square',
+        choice1: '3',
+        choice2: '4',
+        choice3: '6',
+        choice4: '2',
+        answer: 4
+    }
+];
