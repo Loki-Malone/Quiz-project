@@ -91,3 +91,9 @@ h3 {
     background-color: white;
 }
 
+.btn :hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(255, 196, 0);
+    transform: translate(-0.rem);
+    transition: transform 150ms;
+}
