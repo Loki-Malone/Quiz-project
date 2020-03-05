@@ -6,7 +6,7 @@ let currentQuestions = {};
 let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
-let avaiableQuestions =[];
+let availableQuestions =[];
 
 let questions = [
     {
@@ -50,6 +50,13 @@ startGame = () => {
     questionCounter=0;
     score=0;
     avaiableQuestions =[ ...questions];
-    console.log(avaiableQuestions);
+    console.log(availableQuestions);
     getNewQustions();
+};
+
+getNewQustions = () => {
+    questionCounter++;
+    Math.floor(Math.ramdom() * availableQuestions.length);
+    currentQuestions = avaiableQuestions[questionIndex];
+    question.innerText = currentQuestion.question;
 }
