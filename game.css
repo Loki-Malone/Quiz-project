@@ -6,8 +6,17 @@
     border: 0.1rem solid rgb(255, 0, 128);
     background-color: white;
 }
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(255, 196, 0);
+    transform: translate(-0.1rem);
+    transition: transform 150ms;
+}
 .choice-prefix{
     padding: 1.5rem 2.5rem;
     background-color: rgb(173, 200, 230);
     color: white;
+}
+.choice-text {
+    padding: 1.5rem;
 }
