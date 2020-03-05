@@ -1,6 +1,6 @@
-var question = document.getElementById('#question');
-var choices = Array.from(document.getElementsByClassName('choice-text'));
-console.log(choices);
+var question = document.getElementById('question');
+var choice = Array.from(document.getElementsByClassName('choice-text'));
+console.log(choice);
 
 let currentQuestions = {};
 let acceptingAnswers = true;
@@ -44,19 +44,29 @@ let questions = [
 ];
 
 var correct_bonus = 10;
-var max_questions = 3;
+var max_questions = 4;
 
 startGame = () => {
-    questionCounter=0;
-    score=0;
-    avaiableQuestions =[ ...questions];
+    questionCounter = 0;
+    score = 0;
+    avaiableQuestions = [ ...questions];
     console.log(availableQuestions);
     getNewQustions();
 };
 
 getNewQustions = () => {
     questionCounter++;
-    Math.floor(Math.ramdom() * availableQuestions.length);
+    var questionIndex = Math.floor(Math.ramdom() * availableQuestions.length);
     currentQuestions = avaiableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
-}
+
+    choices.forEach( choice => {
+        var number = choice.dataset['number'];
+        choice.innerText = currentQuestions['choice' + number];
+    })
+
+    availableQuestions.splice(questionIndex, 1);
+
+    acceptingAnswers = true;
+    
+};
