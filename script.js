@@ -42,3 +42,14 @@ let questions = [
         answer: 4
     }
 ];
+
+var correct_bonus = 10;
+var max_questions = 3;
+
+startGame = () => {
+    questionCounter=0;
+    score=0;
+    avaiableQuestions =[ ...questions];
+    console.log(avaiableQuestions);
+    getNewQustions();
+}
